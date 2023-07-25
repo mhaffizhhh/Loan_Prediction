@@ -19,3 +19,5 @@ Disini saya membuat skenario yang berisikan beberapa pertanyaan terkait data yan
 8. Rata2 gaji berdasarkan current job year experience
 
 9. Mengetahui kota atau prov yang memiliki rata2 gaji tertinggi
+
+SOURCE DATA : https://www.kaggle.com/datasets/subhamjain/loan-prediction-based-on-customer-behavior
