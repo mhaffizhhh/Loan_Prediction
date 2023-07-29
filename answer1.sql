@@ -1,6 +1,6 @@
 select * from training_data;
 
--- 1. Rata2 income berdasarkan kriteria pengalaman kerja (experience)
+-- 1. Average income by experience category.
 select 
 case
 when experience < 5 then "intern"
@@ -13,25 +13,24 @@ count(income) as counted
 from training_data
 group by category_exp;
 
--- 2. Rata2 gaji berdasarkan maried dan a house ownership
+-- 2. Average income by status and house ownership.
 select married, house_ownership, avg(income) as avg_inc, count(income) as counted
 from training_data
 group by married, house_ownership
 order by married, house_ownership;
 
--- 3. Rata2 pengalaman kerja berdasarkan maried
+-- 3. Average experience by status.
 select married, avg(experience) as avg_exp
 from training_data
 group by married;
 
--- 4. apakah maried/single berpengaruh terhadap defaulted on a loan
+-- 4. Does status affect defaulted on a loan.
 select married, risk_flag, count(*) as counted
 from training_data
 group by married, risk_flag
 order by married, risk_flag;
 
--- 5. Rata2 gaji berdasarkan kota dan profesi
-
+-- 5. Average income by city and profession.
 delimiter $$
 create procedure avg_inc_on_city_profesion(
 in city_name text
@@ -51,7 +50,7 @@ select distinct city from training_data;
 
 call avg_inc_on_city_profesion("lap");
 
--- 6. Mengetahui rata2 gaji berdasarkan kriteria umur dan menghitung brp banyak yang sudah memiliki rumah
+-- 6. Average income by age category and count how many already has house.
 select 
 case
 when age < 30 then "young"
@@ -63,20 +62,20 @@ from training_data
 where House_Ownership = "owned"
 group by criteria_age;
 
--- 7. Mengetahui rata2 gaji berdasarkan profesi dan menghitung brp banyak yang sudah memiliki mobil
+-- 7. Average income by profession and count how many already has car.
 select profession, avg(income) as avg_inc, count(*) as car_count
 from training_data
 where car_ownership = "yes"
 group by profession
 order by Profession;
 
--- 8. Rata2 gaji berdasarkan current job year experience
+-- 8. Average income by job year experience.
 select current_job_yrs, avg(income) as avg_inc
 from training_data
 group by CURRENT_JOB_YRS
 order by CURRENT_JOB_YRS;
 
--- 9. Mengetahui kota atau prov yang memiliki rata2 gaji tertinggi
+-- 9. Most highly average salary by city and state.
 	-- city
     select city, avg(income) as avg_inc
     from training_data
