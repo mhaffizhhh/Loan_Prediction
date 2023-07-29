@@ -83,7 +83,7 @@ order by CURRENT_JOB_YRS;
     order by avg_inc desc
     limit 10;
     
-    -- state
+    	-- state
     select state, avg(income) as avg_inc
     from training_data
     group by state
