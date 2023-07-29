@@ -1,23 +1,13 @@
 # Desc
 
-Disini saya membuat skenario yang berisikan beberapa pertanyaan terkait data yang ada, dimana saya akan menjawab pertanyaan-pertanyaan tersebut.
-
-1. Rata2 income berdasarkan kriteria pengalaman kerja (experience)
-
-2. Rata2 gaji berdasarkan maried dan a house ownership
-
-3. Rata2 pengalaman kerja berdasarkan maried
-
-4. apakah maried/single berpengaruh terhadap defaulted on a loan
-
-5. Rata2 gaji berdasarkan kota dan profesi
-
-6. Mengetahui rata2 gaji berdasarkan kriteria umur dan menghitung brp banyak yang sudah memiliki rumah
-
-7. Mengetahui rata2 gaji berdasarkan profesi dan menghitung brp banyak yang sudah memiliki mobil
-
-8. Rata2 gaji berdasarkan current job year experience
-
-9. Mengetahui kota atau prov yang memiliki rata2 gaji tertinggi
+1. Average income by experience category.
+2. Average income by status and house ownership.
+3. Average experience by status.
+4. Does status affect defaulted on a loan.
+5. Average income by city and profession.
+6. Average income by age category and count how many already has house.
+7. Average income by profession and count how many already has car.
+8. Average income by job year experience.
+9. Most highly average salary by city and state.
 
 SOURCE DATA : https://www.kaggle.com/datasets/subhamjain/loan-prediction-based-on-customer-behavior
