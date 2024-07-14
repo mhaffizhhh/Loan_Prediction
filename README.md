@@ -1,5 +1,5 @@
 # Desc
-
+Here I do several queries, namely:
 1. Average income by experience category.
 2. Average income by status and house ownership.
 3. Average experience by status.
