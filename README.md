@@ -10,6 +10,8 @@ Here I do several queries, namely:
 8. Average income by job year experience.
 9. Most highly average salary by city and state.
 
+## Result
 Results can be seen [Query](https://github.com/mhaffizhhh/Loan_Prediction/blob/main/answer1.sql) and [Dashboard](https://github.com/mhaffizhhh/Loan_Prediction/blob/main/Dashboard.pdf)
 
-SOURCE DATA : https://www.kaggle.com/datasets/subhamjain/loan-prediction-based-on-customer-behavior
+## Dataset
+Source: https://www.kaggle.com/datasets/subhamjain/loan-prediction-based-on-customer-behavior
