@@ -14,4 +14,5 @@ Here I do several queries, namely:
 Results can be seen [Query](https://github.com/mhaffizhhh/Loan_Prediction/blob/main/answer1.sql) and [Dashboard](https://github.com/mhaffizhhh/Loan_Prediction/blob/main/Dashboard.pdf)
 
 ## Dataset
+[Data](https://github.com/mhaffizhhh/Loan_Prediction/blob/main/Loan%20Prediction.zip)
 Source: https://www.kaggle.com/datasets/subhamjain/loan-prediction-based-on-customer-behavior
